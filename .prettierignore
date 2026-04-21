@@ -1,0 +1,21 @@
+# Prettier 忽略列表
+
+# 依赖目录
+node_modules/
+
+# 打包输出目录
+dist/
+dist-ssr/
+*.local
+
+# 编辑器相关
+.vscode/
+.idea/
+
+# 锁文件
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 文档
+*.md
