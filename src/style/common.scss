@@ -1,0 +1,51 @@
+// 全局样式入口
+@use "./variables.scss" as *;
+
+// 3. 全局基础样式 (Global Base Styles)
+:root {
+  --app-primary: #{$primary-color};
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:
+    "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-primary;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// 4. 通用类 (Utility Classes)
+.m-20 {
+  margin: 20px;
+}
+.p-20 {
+  padding: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

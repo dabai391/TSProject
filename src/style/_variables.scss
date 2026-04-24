@@ -1,0 +1,29 @@
+// 变量与混合宏 (仅定义，不产生实际 CSS 代码)
+
+// 1. 颜色变量 (Color Variables)
+$primary-color: #409eff;
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+$text-primary: #303133;
+$text-regular: #606266;
+$text-secondary: #909399;
+$text-placeholder: #c0c4cc;
+
+$border-color-base: #dcdfe6;
+$bg-color-base: #f5f7fa;
+
+// 2. 混合宏 (Mixins)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

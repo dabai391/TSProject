@@ -10,7 +10,7 @@ module.exports = {
   // 不使用制表符缩进，而使用空格
   useTabs: false,
   // 在语句末尾打印分号
-  semi: true,
+  semi: false,
   // 使用单引号而不是双引号
   singleQuote: false,
   // 在 JSX 中使用单引号而不是双引号
@@ -36,4 +36,4 @@ module.exports = {
   endOfLine: "auto",
   // 是否格式化 Vue 文件中的 <script> 和 <style> 标签缩进
   vueIndentScriptAndStyle: false,
-};
+}

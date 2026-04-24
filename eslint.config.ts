@@ -1,10 +1,10 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import pluginVue from "eslint-plugin-vue";
-import css from "@eslint/css";
-import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginPrettier from "eslint-plugin-prettier";
+import js from "@eslint/js"
+import globals from "globals"
+import tseslint from "typescript-eslint"
+import pluginVue from "eslint-plugin-vue"
+import css from "@eslint/css"
+import eslintConfigPrettier from "eslint-config-prettier"
+import eslintPluginPrettier from "eslint-plugin-prettier"
 
 /**
  * ESLint 配置文件 (使用 Flat Config 格式)
@@ -25,6 +25,10 @@ export default tseslint.config(
         ...globals.browser,
         ...globals.node,
       },
+    },
+    rules: {
+      semi: ["error", "never"],
+      "@typescript-eslint/semi": ["error", "never"],
     },
   },
 
@@ -69,6 +73,8 @@ export default tseslint.config(
       "prettier/prettier": "error",
       // 合并 prettier 官方配置，禁用所有与格式相关的 ESLint 规则
       ...eslintConfigPrettier.rules,
+      "vue/no-multiple-template-root": "off",
+      "vue/multi-word-component-names": "off",
     },
   },
-);
+)
