@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <svg :width="width" :height="height">
-      <use :xlink:href="`icon-${name}`" :fill="fillcolor" />
-    </svg>
-  </div>
+  <svg :width="width" :height="height" :fill="fillcolor">
+    <use :href="`#icon-${name}`" />
+  </svg>
 </template>
+
 <script setup lang="ts">
 defineProps({
   name: {
@@ -13,7 +12,7 @@ defineProps({
   },
   fillcolor: {
     type: String,
-    default: "",
+    default: "currentColor",
   },
   width: {
     type: String,

@@ -1,4 +1,4 @@
-import axios from "axios"
+﻿import axios from "axios"
 import useUserStore from "@/store/User/UserStore"
 import { ElMessage } from "element-plus"
 import { useRouter } from "vue-router"
@@ -26,8 +26,8 @@ http.interceptors.request.use(
 http.interceptors.response.use(
   (response) => {
     // 对响应数据状态码为200的处理，返回数据
-    if (response.data.code === 200) {
-      return response.data.data
+    if (response.data.code >= 200 && response.data.code < 300) {
+      return response.data
     }
     return response
   },
