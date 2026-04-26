@@ -38,7 +38,7 @@ const asideItems = ref([
   },
   { id: 3, name: "数据大屏", component: DataScreen },
 ])
-const curItem = ref(asideItems.value[1]?.children?.[0])
+const curItem = ref(asideItems.value[0])
 const handleMessage = (id: number) => {
   const found = asideItems.value.find((item) => item.id === id)
   // console.log(found)
