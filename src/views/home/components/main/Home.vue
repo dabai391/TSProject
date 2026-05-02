@@ -129,7 +129,6 @@ const OrderchartRef = ref<HTMLDivElement>()
 // 初始化图表
 const initChart = () => {
   if (!chartRef.value) return
-
   const myChart = echarts.init(chartRef.value)
   const option: echarts.EChartsOption = {
     color: ["#409eff", "#67c23a"],

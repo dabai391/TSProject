@@ -67,7 +67,7 @@
 <script setup lang="ts">
 import { batchDeleteUsersApi, deleteUserListApi, getUserListApi } from "@/apis/userlist/UserList"
 import { onMounted, ref } from "vue"
-import RightDrawer from "@/views/home/components/main/RightDrawer.vue"
+import RightDrawer from "@/views/home/components/main/user/RightDrawer.vue"
 import type { UserInfoList, UpdateUserInfoList } from "@/apis/userlist/UserList.d"
 import { ElMessage, ElMessageBox } from "element-plus"
 const selectable = (row: UpdateUserInfoList) => {

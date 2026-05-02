@@ -22,9 +22,9 @@
 import Aside from "@/views/home/components/Aside.vue"
 import Header from "@/views/home/components/Header.vue"
 import Home from "@/views/home/components/main/Home.vue"
-import UserList from "@/views/home/components/main/UserList.vue"
-import DataScreen from "@/views/home/components/main/DataScreen.vue"
-import AddUser from "@/views/home/components/main/AddUser.vue"
+import UserList from "@/views/home/components/main/user/UserList.vue"
+import DataScreen from "@/views/datascreen/index.vue"
+import AddUser from "@/views/home/components/main/user/AddUser.vue"
 import { ref } from "vue"
 const asideItems = ref([
   { id: 1, name: "首页", component: Home },
@@ -38,7 +38,7 @@ const asideItems = ref([
   },
   { id: 3, name: "数据大屏", component: DataScreen },
 ])
-const curItem = ref(asideItems.value[0])
+const curItem = ref(asideItems.value[2])
 const handleMessage = (id: number) => {
   const found = asideItems.value.find((item) => item.id === id)
   // console.log(found)
